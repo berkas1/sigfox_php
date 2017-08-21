@@ -107,7 +107,7 @@ class DeviceType extends AbstractSigfox
      */
     public function deleteCallback(string $callbackId)
     {
-        if ($callbackId == "" || $callbackId == null) {
+        if ($callbackId === "") {
             throw new \InvalidArgumentException("You have to provide ID of the callback.");
         }
         $path = '/api/devicetypes/' . $this->deviteTypeId . '/callbacks/' . $callbackId . '/delete';
@@ -124,7 +124,7 @@ class DeviceType extends AbstractSigfox
      */
     public function enableCallback(string $callbackId)
     {
-        if ($callbackId == "" || $callbackId == null) {
+        if ($callbackId === "") {
             throw new \InvalidArgumentException("You have to provide ID of the callback.");
         }
         $path = '/api/devicetypes/' . $this->deviteTypeId . '/callbacks/' . $callbackId . '/enable?enabled=true';
@@ -141,7 +141,7 @@ class DeviceType extends AbstractSigfox
      */
     public function disableCallback(string $callbackId)
     {
-        if ($callbackId == "" || $callbackId == null) {
+        if ($callbackId === "") {
             throw new \InvalidArgumentException("You have to provide ID of the callback.");
         }
         $path = '/api/devicetypes/' . $this->deviteTypeId . '/callbacks/' . $callbackId . '/enable?enabled=false';
@@ -158,7 +158,7 @@ class DeviceType extends AbstractSigfox
      */
     public function selectDownlinkCallback(string $callbackId)
     {
-        if ($callbackId == "" || $callbackId == null) {
+        if ($callbackId === "") {
             throw new \InvalidArgumentException("You have to provide ID of the callback.");
         }
         $path = '/api/devicetypes/' . $this->deviteTypeId . '/callbacks/' . $callbackId . '/downlink';
@@ -207,7 +207,7 @@ class DeviceType extends AbstractSigfox
      */
     public function listGeologConfigs(string $groupId)
     {
-        if ($groupId == "" || $groupId == null) {
+        if ($groupId === "") {
             throw new \InvalidArgumentException("You have to provide ID of the group");
         }
 

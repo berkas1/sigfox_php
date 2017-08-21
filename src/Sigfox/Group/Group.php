@@ -46,7 +46,7 @@ class Group extends AbstractSigfox
      */
     public function info(string $groupId)
     {
-        if ($groupId == "" || $groupId == null) {
+        if ($groupId === "") {
             throw new \InvalidArgumentException("You have to provide ID of the group.");
         }
         $path = '/api/groups/' . $groupId;
