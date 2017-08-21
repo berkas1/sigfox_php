@@ -43,6 +43,10 @@ print $device->info();
 
 
 **Every method** that communicates with API returns a string **which contains JSON formatted message**.
+**To check HTTP response code** (to see if action was completed successfully) use the *getResponseCode()* method:
+```php
+print $device->getResponseCode();
+```
 
 If a method accepts optional parameters, please provide them in form of array. To see which parameters are available for 
 each method, please see official Sigfox API documentation (https://resources.sigfox.com/document/backend-api-documentation)
