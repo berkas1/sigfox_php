@@ -1,0 +1,27 @@
+{
+    "name": "berkas1/sigfox_php",
+    "description": "Sigfox API PHP 7 library",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Simon Berka",
+            "email": "berka@berkasimon.com",
+            "homepage": "https://berkasimon.com",
+            "role": "Developer"
+        }
+    ],
+
+    "support": {
+        "source": "https://github.com/berkas1/sigfox_php",
+        "issues": "https://github.com/berkas1/sigfox_php"
+    },
+
+    "require": {},
+
+    "autoload": {
+        "psr-0": {
+            "Sigfox": "src/"
+        }
+    }
+}
